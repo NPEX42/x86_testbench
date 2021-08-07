@@ -88,7 +88,7 @@ dependencies = [
 
 [[package]]
 name = "x86_testbench"
-version = "0.1.1-rc.2"
+version = "0.1.1-rc.3"
 dependencies = [
  "bootloader",
  "lazy_static",
