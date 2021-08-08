@@ -1,6 +1,6 @@
 [package]
 name = "x86_testbench"
-version = "0.1.1-alpha.0"
+version = "0.1.1"
 edition = "2018"
 license = "MIT OR Apache-2.0"
 description = "A Simple x86 Testbench / nanokernel, containg a basic serial logger & test framework runner"
