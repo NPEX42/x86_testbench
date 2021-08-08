@@ -11,26 +11,26 @@ lazy_static! {
 }
 
 pub macro debug($($args:tt)*) {
-    $crate::logger::_debug(format_args!("\x1b[0;36m[DEBUG]: \x1b[0m"));
+    $crate::logger::_debug(format_args!("\x1b[0;36m[DEBUG] - \x1b[0m"));
     $crate::logger::_debug(format_args!($($args)*));
     $crate::logger::_debug(format_args!("\r\n"));
 }
 
 pub macro log($($args:tt)*) {
-    $crate::logger::_log(format_args!("\x1b[0;32m[LOG]: \x1b[0m"));
+    $crate::logger::_log(format_args!("\x1b[0;32m[LOG] - \x1b[0m"));
     $crate::logger::_log(format_args!($($args)*));
     $crate::logger::_debug(format_args!("\r\n"));
 }
 
 pub macro warn($($args:tt)*) {
-    $crate::logger::_warn(format_args!("\x1b[0;33m[WARN]: \x1b[0m"));
+    $crate::logger::_warn(format_args!("\x1b[0;33m[WARN] - \x1b[0m"));
     $crate::logger::_warn(format_args!($($args)*));
     $crate::logger::_debug(format_args!("\r\n"));
 }
 
 
 pub macro error($($args:tt)*) {
-    $crate::logger::_error(format_args!("\x1b[0;31m[LOG]: \x1b[0m"));
+    $crate::logger::_error(format_args!("\x1b[0;31m[LOG] - \x1b[0m"));
     $crate::logger::_error(format_args!($($args)*));
     $crate::logger::_debug(format_args!("\r\n"));
 }

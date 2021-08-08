@@ -23,7 +23,7 @@ pub macro boot($func:path) {
 }
 
 
-#[cfg_attr(not(feature = "ext_panic"), panic_handler)]
+#[cfg_attr(not(all(feature = "ext_panic", test)), panic_handler)]
 pub fn on_panic(_info : &core::panic::PanicInfo) -> ! {
     error!("[FAILED]");
     loop {}

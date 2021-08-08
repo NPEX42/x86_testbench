@@ -34,7 +34,7 @@ where
     T: Fn(),
 {
     fn run(&self) {
-        print!("\x1b[0;34m[TEST]: \x1b[0m{}...\t", core::any::type_name::<T>());
+        print!("\x1b[0;34m[TEST] - \x1b[0m{}...\t", core::any::type_name::<T>());
         self();
         println!("\x1b[0;32m[OK]\x1b[0m");
     }
