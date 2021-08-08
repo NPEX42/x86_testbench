@@ -7,6 +7,7 @@ description = "A Simple x86 Testbench / nanokernel, containg a basic serial logg
 categories = ["development-tools::testing", "no-std", "development-tools::testing"]
 
 
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
